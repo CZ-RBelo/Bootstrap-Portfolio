@@ -17,7 +17,6 @@ body {
 }
 
 /* Typography CSS / Set margin 0 */
-
 h1, h2, h3 , h4, h5, h6 {
   font-family: 'Anton', sans-serif;
   margin: 0;  
@@ -28,6 +27,16 @@ a p {
 }
 
 /* Navigation bar */
+.customNavBar{
+  position: fixed;
+  width: 100%;
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
+  padding: 0px 25px 0px 25px;
+  }
+
+
 
 /* General */
 
