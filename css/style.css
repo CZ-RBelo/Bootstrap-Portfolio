@@ -1,0 +1,44 @@
+/* variables */
+:root {
+  --navBarColor: #094067;
+  --navBarHighlightColor: #3da9fc;
+  --navBarTextColor: #fffffe;
+  --navBarTextColorHover: #ef4565;
+  --secondaryColor:#90b4ce;
+}
+/* Body Css Set */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura', 'Anton', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Typography CSS / Set margin 0 */
+
+h1, h2, h3 , h4, h5, h6 {
+  font-family: 'Anton', sans-serif;
+  margin: 0;  
+}
+a p {
+  font-family: 'Jura', sans-serif;
+  margin: 0;
+}
+
+/* Navigation bar */
+
+/* General */
+
+
+/* Navigation dropdown menu */
+
+
+/* Navigation links */
+
+
+/* Jumbotron  */
+
+
+/* Jumbotron copy */
