@@ -42,20 +42,23 @@ a, p {
     color:var(--navBarTextColor) !important;
   }
 
-/* Hero bar */
-header.masthead {
+/* Hero section */
+.hero {
   position: relative;
-  width: 100%;
-  top: 60px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color:var(--bgLightGrey) !important;
+  padding: 50px 0;  
 }
 .rowAlignVert {
   align-items: center;
+}
+.rowAlignHor {
+  justify-items: center;
+  justify-content: center;
+  padding: 80px 50px 50px 50px;   
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color:var(--bgLightGrey) !important;
 }
 .heroImage {
   float:right;
@@ -63,6 +66,14 @@ header.masthead {
 .customJumbotron {
   background-color: transparent !important;
 }
+
+/* Projects section */
+.projects {
+  position: relative;
+  padding: 50px 0;
+  background-color: transparent !important;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 575.98px) { 
