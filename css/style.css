@@ -1,11 +1,12 @@
 /* variables */
 :root {
-  --navBarColor: #094067;
-  --navBarHighlightColor: #3da9fc;
+  --navBarColor: #ff8e3c;
+  --navBarHighlightColor: #abd1c6;
   --navBarTextColor: #fffffe;
   --navBarTextColorHover: #ef4565;
-  --secondaryColor:#90b4ce;
+  --bgLightGrey:#f5f5f5;
 }
+
 /* Body Css Set */
 body {
   margin: 0;
@@ -21,7 +22,7 @@ h1, h2, h3 , h4, h5, h6 {
   font-family: 'Anton', sans-serif;
   margin: 0;  
 }
-a p {
+a, p {
   font-family: 'Jura', sans-serif;
   margin: 0;
 }
@@ -29,25 +30,43 @@ a p {
 /* Navigation bar */
 .customNavBar{
   position: fixed;
-  width: 100%;
-  background-color: transparent !important;
-  background-size: cover;
+  width: 100%;  
   z-index: 10;
-  padding: 0px 25px 0px 25px;
+  padding: 10px 25px 10px 25px;
+  background-color:var(--navBarColor) !important;  
+  }
+  .customNavBar a {
+    color:var(--navBarTextColor) !important;
+  }
+  .customNavBar a:hover{
+    color:var(--navBarTextColor) !important;
   }
 
+/* Hero bar */
+header.masthead {
+  position: relative;
+  width: 100%;
+  top: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:var(--bgLightGrey) !important;
+}
+.rowAlignVert {
+  align-items: center;
+}
+.heroImage {
+  float:right;
+}
+.customJumbotron {
+  background-color: transparent !important;
+}
 
-
-/* General */
-
-
-/* Navigation dropdown menu */
-
-
-/* Navigation links */
-
-
-/* Jumbotron  */
-
-
-/* Jumbotron copy */
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 575.98px) { 
+  .heroImage {
+    float:left;
+  }
+}
