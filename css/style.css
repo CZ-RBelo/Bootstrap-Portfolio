@@ -5,6 +5,7 @@
   --navBarTextColor: #fffffe;
   --navBarTextColorHover: #ef4565;
   --bgLightGrey:#f5f5f5;
+  --txtColorMediumGrey:#959595;
 }
 
 /* Body Css Set */
@@ -19,7 +20,7 @@ body {
 
 /* Typography CSS / Set margin 0 */
 h1, h2, h3 , h4, h5, h6 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Jura', sans-serif;
   margin: 0;  
 }
 a, p {
@@ -56,7 +57,6 @@ a, p {
   padding: 80px 50px 50px 50px;   
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover;
   background-color:var(--bgLightGrey) !important;
 }
@@ -74,10 +74,98 @@ a, p {
   background-color: transparent !important;
 }
 
+/* Skills section */
+.skills {
+  position: relative;
+  padding: 50px 0;
+  background-color: var(--bgLightGrey) !important;
+}
+.skillsBar{
+  width: 100%; 
+}
+.skillsBar h2{
+font-weight: 400;
+letter-spacing: 1px;
+margin-top: 40px;
+margin-bottom: 5px;
+color:var(--txtColorMediumGrey) !important;
+font-size: 16px;
+}
+.skillProgressBar{
+background:var(--txtColorMediumGrey) !important;
+width: 55%;
+height: 10px;
+border-radius: 5px;
+}
+.skillProgressBar div{
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background: var(--navBarColor) !important;
+}
+.skillProgressBar div span{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background:var(--bgLightGrey) !important;
+  float: right;
+  margin-top: -15px;
+  margin-bottom: -20px;
+  color:var(--navBarColor) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid  var(--navBarColor) !important;
+}
+.skillHTML {
+  animation: skillHTML 1s linear forwards;
+}
+.skillCSS {
+  animation: skillCSS 1s linear forwards;
+}
+.skillJavaScript {
+  animation: skillJavaScript 1s linear forwards;
+}
+.skillPython {
+  animation: skillPython 1s linear forwards;
+}
+.skillReact {
+  animation: skillReact 1s linear forwards;
+}
+@keyframes skillHTML{
+  100%{
+    width: 100%;
+  }
+}
+@keyframes skillCSS{
+  100%{
+    width: 74%;
+  }
+}
+@keyframes skillJavaScript{
+  100%{
+    width: 65%;
+  }
+}
+@keyframes skillPython{
+  100%{
+    width: 54%;
+  }
+}
+@keyframes skillReact{
+  100%{
+    width: 49%;
+  }
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 575.98px) { 
   .heroImage {
     float:left;
+    padding: 50px 0px 0px 0px;
+  }
+  .customJumbotron {
+    padding: 0px 0px 0px 0px;
   }
 }
