@@ -74,7 +74,7 @@ a, p {
   background-color: transparent !important;
 }
 
-/* Skills section */
+/* Software Skills section */
 .skills {
   position: relative;
   padding: 50px 0;
@@ -158,6 +158,58 @@ border-radius: 5px;
   }
 }
 
+/* Language Skills section */
+.langSkills{
+width: 160px;
+height: 160px;
+background-color: var(--bgLightGrey) !important;
+position: relative;
+}
+.outer{
+width: 160px;
+height: 160px;
+border-radius: 50%;
+padding: 20px;
+box-shadow: 6px 6px 10px -1px rgb(0,0,0,0.15),
+-6px -6px 10px -1px rgb(255,255,255,0.7);
+
+}
+.inner{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgb(0,0,0,0.2),
+  inset -4px -4px 6px -1px rgb(255,255,255,0.7),
+  -0.5px -0.5px 0px rgb(255,255,255,1),
+  0.5px 0.5px 0px rgb(0,0,0,0.15),
+  0px 12px 10px -10px rgb(0,0,0,0.05);
+  }
+#number{
+font-weight: 600px;
+color: var(--navBarColor) !important;
+}
+circle{
+  fill: none;
+  stroke: url(#GradientColor) !important;
+  stroke-width: 20px;
+  stroke-dasharray: 436;
+  stroke-dashoffset: 436;
+  animation: anim 2s linear forwards;
+}
+svg{
+  position: absolute;
+  top: 0;
+  left: 10;
+}
+@keyframes anim {
+100%{
+  stroke-dashoffset: 152.6;
+}
+
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 575.98px) { 
