@@ -1,15 +1,25 @@
 /* variables */
 :root {
-  --navBarColor: #ff8e3c;
-  --navBarHighlightColor: #abd1c6;
-  --navBarTextColor: #fffffe;
-  --navBarTextColorHover: #ef4565;
 
-  --bgLightGrey:#f5f5f5;
-  --bgMediumkGrey:#959595;
-  --bgDarkGrey:#5e5e5e;
-  
-  --txtColorMediumGrey:#959595;
+  /* NavBar colors */
+  --navBarColor: #004643;
+  --navBarTextColor: #fffffe;
+  --navBarTextColorHover: #f9bc60;
+
+/* Text colors -> NavBar colors */
+  --nbTxtDark: #004643;
+  --nbTxtLight: #fffffe;
+  --nbTxtHover: #f9bc60;
+
+  /* Background colors */
+  --bgLight:#f5f5f5;
+  --bgMedium:#959595;
+  --bgDark:#5e5e5e;
+
+  /* Text colors -> Background colors */
+  --txtLight:#f5f5f5;
+  --txtMedium:#959595;
+  --txtDark:#5e5e5e;
 
 }
 
@@ -28,26 +38,33 @@ h1, h2, h3 , h4, h5, h6 {
   font-family: 'Jura', sans-serif;
   padding-bottom: 10px;
   margin: 0;
+  color:var(--nbTxtDark) !important;
 }
-a, p {
+p {
   font-family: 'Jura', sans-serif;
   padding-bottom: 10px;
   margin: 0;
+  color:var(--txtDark) !important;
+}
+a {
+  font-family: 'Jura', sans-serif;
+  color:var(--txtLight) !important;
+  font-size: medium;
 }
 
 /* Navigation bar */
-.customNavBar{
+#customNavBar{
   position: fixed;
   width: 100%;  
   z-index: 10;
   padding: 10px 25px 10px 25px;
   background-color:var(--navBarColor) !important;  
   }
-  .customNavBar a {
+  #customNavBar a {
     color:var(--navBarTextColor) !important;
   }
-  .customNavBar a:hover{
-    color:var(--navBarTextColor) !important;
+  #customNavBar a:hover{
+    color:var(--navBarTextColorHover) !important;
   }
 
 /* Hero section */
@@ -60,8 +77,8 @@ a, p {
   background-image: url("../images/pexels-macbook-pro-on-brown-wooden-table.jpg");   
 }
 #heroJumbotron{
-background-color: var(--bgLightGrey);
-border-bottom: 10px solid var(--bgDarkGrey);
+background-color: var(--bgLight);
+border-bottom: 10px solid var(--navBarColor);
 opacity: 0.8;
 max-width: 350px;
 margin-top: 135px;
@@ -72,7 +89,7 @@ margin-top: 135px;
   position: relative;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color:var(--bgLightGrey) !important; 
+  background-color:var(--bgLight) !important; 
 }
 
 /* Contact section */
@@ -84,9 +101,24 @@ margin-top: 135px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:var(--bgLightGrey) !important;     
+  background-color:var(--bgLight) !important;     
 }
-
+#contact .card-body .social td > a {
+  color: var(--bgTxtDark) !important;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--txtDark) !important;
+}
+#contact .card-body .social td > a:hover {
+  color: var(--nbTxtHover) !important;
+}
+#contact .card-body .social td > i {
+  color: var(--bgTxtDark) !important;
+  font-size: 25px;
+  margin-right: 25px;
+  text-align: right;
+  color: var(--txtDark) !important;
+}
 .rowAlignVert {
   align-items: center;
 }
@@ -112,11 +144,11 @@ margin-top: 135px;
   margin-top: -35px;
   margin-bottom: 0px;
   padding-top: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:var(--bgLightGrey) !important;  
+  background-color:var(--bgLight) !important;  
 }
 .skillsBar{
   width: 100%; 
@@ -190,8 +222,8 @@ border-radius: 3px;
   margin-top: 0px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color:var(--bgDarkGrey) !important;
-  color: var(--bgMeLightkGrey) !important;
+  background-color:var(--bgDark) !important;
+  color: var(--txtDark) !important;
 }
 .footer-basic .social {
   text-align:center;
@@ -205,19 +237,22 @@ border-radius: 3px;
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  background-color:var(--bgLightGrey) !important;
+  background-color:var(--bgLight) !important;
   margin:0 8px;
   color:inherit;
   opacity:0.75;
 }
+.footer-basic .social > a {
+  color: var(--bgTxtDark) !important;
+}
 .footer-basic .social > a:hover {
-  opacity:0.9;
+  color: var(--nbTxtHover) !important;
 }
 .footer-basic .copyright {
   margin-top:15px;
   text-align:center;
   font-size:13px;
-  color:#aaa;
+  color:var(--txtMedium) !important;
   margin-bottom:0;
 }
 
