@@ -83,6 +83,17 @@ opacity: 0.8;
 max-width: 350px;
 margin-top: 135px;
 }
+.rowAlignVert {
+  align-items: center;
+}
+.heroImage {
+  float:right;
+  margin-right: 90px;
+}
+.customJumbotron {
+  background-color: transparent !important;
+  padding-left: 0;
+}
 
 /* Objective section */
 #objective {
@@ -118,17 +129,6 @@ margin-top: 135px;
   margin-right: 25px;
   text-align: right;
   color: var(--txtDark) !important;
-}
-.rowAlignVert {
-  align-items: center;
-}
-.heroImage {
-  float:right;
-  margin-right: 90px;
-}
-.customJumbotron {
-  background-color: transparent !important;
-  padding-left: 0;
 }
 
 /* Projects section */
